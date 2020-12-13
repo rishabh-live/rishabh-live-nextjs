@@ -14,6 +14,7 @@ html::-webkit-scrollbar {
 }
 
 section {
+  min-height: 100vh;
   max-width: 100vw;
   overflow: auto;
 }
@@ -181,7 +182,7 @@ section:nth-child(2) .aboutCardHolder .paragraphMobile {
 
 section:nth-child(3) {
   font-family: "Righteous", cursive;
-  height: auto;
+  max-height: initial;
 }
 
 section:nth-child(3) .headline {
@@ -285,108 +286,8 @@ section:nth-child(3) .gitCardHolder .gitCard .projCards:nth-child(3) {
 }
 
 section:nth-child(4) {
-  font-family: "Righteous", cursive;
-  height: auto;
-}
-
-section:nth-child(4) .headline {
-  width: 100vw;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-}
-
-section:nth-child(4) .headline .backTitle {
-  color: #3a5dd7;
-  margin: 0 auto;
-  width: 100vw;
-  z-index: -200;
-  font-size: 15vh;
-  position: absolute;
-  -webkit-transform: translateX(-9vw);
-          transform: translateX(-9vw);
-  opacity: 0.1;
-}
-
-section:nth-child(4) .headline .frontTitle {
-  color: #3a5dd7;
-  margin: 0 auto;
-  width: 100vw;
-  z-index: 200;
-  position: absolute;
-  font-size: 7vh;
-  -webkit-transform: translate(4vw, 12vh);
-          transform: translate(4vw, 12vh);
-}
-
-section:nth-child(4) .gitCardHolder {
-  position: absolute;
-  height: 50vh;
-  width: 100vw;
-  -ms-grid-column-align: center;
-      justify-self: center;
-  margin-top: 18vh;
-}
-
-section:nth-child(4) .gitCardHolder .gitCard {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-}
-
-section:nth-child(4) .gitCardHolder .gitCard .projCards {
-  min-width: 40vw;
-  height: 25vh;
-  border-color: #3a5dd7;
-  border-radius: 10px;
-  margin-left: 1vw;
-  margin-right: 1vw;
-  margin-top: 5vw;
-  -webkit-box-flex: 1;
-      -ms-flex: 1;
-          flex: 1;
-  text-align: left;
-}
-
-section:nth-child(4) .gitCardHolder .gitCard .projCards div {
-  font-family: "Righteous", cursive;
-  -webkit-transform: translateY(5px);
-          transform: translateY(5px);
-}
-
-section:nth-child(4) .gitCardHolder .gitCard .projCards div .nameOfTheProject {
-  font-size: 1.3vw;
-  -webkit-transform: translateY(5px);
-          transform: translateY(5px);
-}
-
-section:nth-child(4) .gitCardHolder .gitCard .projCards div img {
-  height: 4vh;
-  margin: 14px;
-}
-
-section:nth-child(4) .gitCardHolder .gitCard .projCards div .dipstats {
-  height: auto;
-}
-
-section:nth-child(4) .gitCardHolder .gitCard .projCards div .prjDesc {
-  font-family: "Ubuntu", sans-serif;
-  margin-left: 1.2vw;
-  font-size: 0.8vw;
-}
-
-section:nth-child(4) .gitCardHolder .gitCard .projCards div p:nth-child(2) label {
-  font-size: 1.2vw;
-}
-
-section:nth-child(4) .gitCardHolder .gitCard .projCards:nth-child(3) {
-  display: block;
+  min-height: 1vh;
+  max-height: 2vh;
 }
 
 @media (max-width: 500px) {
