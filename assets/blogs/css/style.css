@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Lobster&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Balsamiq+Sans&display=swap");
 * {
   margin: 0;
   padding: 0;
@@ -9,8 +11,8 @@ section:nth-child(1) nav .banner {
   width: 92vw;
   height: 30vh;
   overflow: hidden;
-  -webkit-box-shadow: 0px 1px 3px 8px #d8d6d6;
-          box-shadow: 0px 1px 3px 8px #d8d6d6;
+  -webkit-box-shadow: 0px 1px 23px 8px #a8a8a8;
+          box-shadow: 0px 1px 23px 8px #a8a8a8;
   border-bottom-left-radius: 20px;
   border-bottom-right-radius: 20px;
 }
@@ -19,5 +21,91 @@ section:nth-child(1) nav .banner img {
   width: 92vw;
   -webkit-transform: translateY(-20%);
           transform: translateY(-20%);
+}
+
+section:nth-child(2) {
+  margin-top: 12px;
+}
+
+section:nth-child(2) .mainCard {
+  width: 92vw;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+section:nth-child(2) .mainCard .blogCard {
+  min-width: 20vw;
+  max-width: 20vw;
+  min-height: 450px;
+  background-color: white;
+  margin: 2vw;
+  border-radius: 22px;
+  -webkit-box-shadow: 0px 0px 13px 6px #b3b3b3;
+          box-shadow: 0px 0px 13px 6px #b3b3b3;
+  -webkit-transition: -webkit-box-shadow 0.5s ease-in-out;
+  transition: -webkit-box-shadow 0.5s ease-in-out;
+  transition: box-shadow 0.5s ease-in-out;
+  transition: box-shadow 0.5s ease-in-out, -webkit-box-shadow 0.5s ease-in-out;
+}
+
+section:nth-child(2) .mainCard .blogCard .mainImage {
+  border-top-left-radius: 22px;
+  border-top-right-radius: 22px;
+  width: 20vw;
+}
+
+section:nth-child(2) .mainCard .blogCard #title {
+  font-size: 29px;
+  font-weight: bold;
+  color: #420404;
+  float: left;
+  font-family: 'Lobster', cursive;
+  padding: 1vh;
+}
+
+section:nth-child(2) .mainCard .blogCard #short {
+  margin: 0.5vw;
+  text-align: justify;
+  font-family: 'Balsamiq Sans', cursive;
+  font-size: 19px;
+  text-overflow: ellipsis;
+  max-height: 133px;
+  overflow: hidden;
+}
+
+section:nth-child(2) .mainCard .blogCard #readMore {
+  outline: none;
+  background-color: #0099ff;
+  border: none;
+  border-radius: 10px;
+  padding: 12px;
+  color: white;
+  -webkit-transition: background-color 0.5s ease-in-out;
+  transition: background-color 0.5s ease-in-out;
+}
+
+section:nth-child(2) .mainCard .blogCard #readMore:hover {
+  background-color: #0084ff;
+  -webkit-transition: background-color 0.3s ease-in-out;
+  transition: background-color 0.3s ease-in-out;
+}
+
+section:nth-child(2) .mainCard .blogCard:hover {
+  -webkit-box-shadow: 0px 0px 23px 13px #cecece;
+          box-shadow: 0px 0px 23px 13px #cecece;
+  -webkit-transition: -webkit-box-shadow 0.3s ease-in-out;
+  transition: -webkit-box-shadow 0.3s ease-in-out;
+  transition: box-shadow 0.3s ease-in-out;
+  transition: box-shadow 0.3s ease-in-out, -webkit-box-shadow 0.3s ease-in-out;
 }
 /*# sourceMappingURL=style.css.map */

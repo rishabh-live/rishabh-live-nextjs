@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Balsamiq+Sans&display=swap');
 * {
     margin: 0;
     padding: 0;
@@ -14,9 +16,73 @@ section:nth-child(1) {
                 width: 92vw;
                 transform: translateY(-20%);
             }
-            box-shadow: 0px 1px 3px 8px rgb(216, 214, 214);
+            box-shadow: 0px 1px 23px 8px rgb(168,
+            168,
+            168);
             border-bottom-left-radius: 20px;
             border-bottom-right-radius: 20px;
+        }
+    }
+}
+
+section:nth-child(2) {
+    margin-top: 12px;
+    .mainCard {
+        width: 92vw;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        .blogCard {
+            min-width: 20vw;
+            max-width: 20vw;
+            min-height: 450px;
+            background-color: rgb(255, 255, 255);
+            margin: 2vw;
+            border-radius: 22px;
+            .mainImage {
+                border-top-left-radius: 22px;
+                border-top-right-radius: 22px;
+                width: 20vw;
+            }
+            box-shadow:0px 0px 13px 6px rgb(179,
+            179,
+            179);
+            transition:box-shadow 0.5s ease-in-out;
+            #title {
+                font-size: 29px;
+                font-weight: bold;
+                color: rgb(66, 4, 4);
+                float: left;
+                font-family: 'Lobster', cursive;
+                padding: 1vh;
+            }
+            #short {
+                margin: 0.5vw;
+                text-align: justify;
+                font-family: 'Balsamiq Sans', cursive;
+                font-size: 19px;
+                text-overflow: ellipsis;
+                max-height: 133px;
+                overflow: hidden;
+            }
+            #readMore {
+                outline: none;
+                background-color: rgb(0, 153, 255);
+                border: none;
+                border-radius: 10px;
+                padding: 12px;
+                color: white;
+                transition: background-color 0.5s ease-in-out;
+            }
+            #readMore:hover {
+                background-color: rgb(0, 132, 255);
+                transition: background-color 0.3s ease-in-out;
+            }
+        }
+        .blogCard:hover {
+            box-shadow: 0px 0px 23px 13px rgb(206, 206, 206);
+            transition: box-shadow 0.3s ease-in-out;
         }
     }
 }
