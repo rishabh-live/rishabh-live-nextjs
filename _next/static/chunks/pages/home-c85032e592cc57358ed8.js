@@ -1,1 +1,0 @@
-_N_E=(window.webpackJsonp_N_E=window.webpackJsonp_N_E||[]).push([[12],{TetW:function(n,_,o){(window.__NEXT_P=window.__NEXT_P||[]).push(["/home",function(){return o("USUq")}])},USUq:function(n,_,o){"use strict";o.r(_);var t=o("cMU6");_.default=t.default}},[["TetW",0,1,2,3,4,5]]]);

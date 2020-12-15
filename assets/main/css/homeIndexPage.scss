@@ -1,0 +1,739 @@
+body,
+html {
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+}
+
+.heart {
+    color: #e25555;
+}
+
+html::-webkit-scrollbar {
+    width: 0.1px;
+}
+
+section {
+    min-height: 100vh;
+    max-width: 100vw;
+    overflow: auto;
+}
+
+section:nth-child(1) {
+    min-height: 100vh;
+    background: none;
+    font-family: "Righteous", cursive;
+    background-color: #3a5dd7;
+    .line {
+        label {
+            margin: 1vh;
+            color: rgb(109, 177, 241);
+            font-size: 9vw;
+            animation: line 0.3s ease-in;
+        }
+    }
+    .holder {
+        display: flex;
+        flex-direction: row;
+        .dp {
+            img {
+                height: calc(100px + 25vw);
+                transform: translateX(-10vw);
+                animation: loadimg 1s linear;
+                flex: 1;
+                border-radius: 50%;
+            }
+        }
+        .menu {
+            margin-top: 5vh;
+            transform: translate(-10vw, 3vh);
+            animation: menu 1s ease-in-out;
+            flex: 1;
+            background-image: url("/menu-ico.png");
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: contain;
+            p {
+                padding-top: 2vh;
+                transform: translateY(10px);
+                font-size: 6vh;
+                color: white;
+                a {
+                    text-decoration: none;
+                    color: white;
+                }
+            }
+        }
+    }
+}
+
+section:nth-child(2) {
+    min-height: 100vh;
+    font-family: "Righteous", cursive;
+    .headline {
+        width: 100vw;
+        justify-content: center;
+        .backTitle {
+            color: #3a5dd7;
+            margin: 0 auto;
+            width: 100vw;
+            z-index: -200;
+            font-size: 15vh;
+            position: absolute;
+            transform: translateX(-9vw);
+            opacity: 0.1;
+        }
+        .frontTitle {
+            color: #3a5dd7;
+            margin: 0 auto;
+            width: 100vw;
+            z-index: 200;
+            position: absolute;
+            font-size: 7vh;
+            transform: translate(4vw, 12vh);
+        }
+    }
+    .aboutCardHolder {
+        position: absolute;
+        height: 50vh;
+        width: 70vw;
+        justify-self: center;
+        margin-top: 28vh;
+        margin-left: 15vw;
+        border-radius: 20px;
+        .aboutCard {
+            display: flex;
+            border-radius: 20px;
+            .mypic {
+                img {
+                    max-height: 50vh;
+                    border-top-left-radius: 20px;
+                    border-bottom-left-radius: 20px;
+                }
+            }
+            .aboutme {
+                border-radius: 20px;
+                label {
+                    font-family: "Righteous", cursive;
+                    padding: 2vw;
+                    font-size: 3vw;
+                    color: #3a5dd7;
+                    position: absolute;
+                }
+                label:nth-child(1) {
+                    z-index: -3300000;
+                    font-size: 4vw;
+                    color: #3a5dd7;
+                    opacity: 0.1;
+                    transform: translate(-2vw, -4vh);
+                }
+                .paragraph {
+                    font-family: "Ubuntu", sans-serif;
+                    font-size: calc(11px + 1vw);
+                    position: absolute;
+                    padding-top: 5vw;
+                    transform: translateY(3vh);
+                    color: rgb(21, 175, 175);
+                    text-align: right;
+                    margin-top: auto;
+                }
+            }
+        }
+        .paragraphMobile {
+            display: none;
+        }
+    }
+}
+
+section:nth-child(3) {
+    font-family: "Righteous", cursive;
+    max-height: initial;
+    .headline {
+        width: 100vw;
+        justify-content: center;
+        .backTitle {
+            color: #3a5dd7;
+            margin: 0 auto;
+            width: 100vw;
+            z-index: -200;
+            font-size: 15vh;
+            position: absolute;
+            transform: translateX(-9vw);
+            opacity: 0.1;
+        }
+        .frontTitle {
+            color: #3a5dd7;
+            margin: 0 auto;
+            width: 100vw;
+            z-index: 200;
+            position: absolute;
+            font-size: 7vh;
+            transform: translate(4vw, 12vh);
+        }
+    }
+    .gitCardHolder {
+        position: absolute;
+        height: 50vh;
+        width: 100vw;
+        justify-self: center;
+        margin-top: 18vh;
+        .gitCard {
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            .projCards {
+                min-width: 25vw;
+                height: auto;
+                border-color: #3a5dd7;
+                border-radius: 10px;
+                margin-left: 1vw;
+                margin-right: 1vw;
+                margin-top: 3vw;
+                flex: 1;
+                text-align: left;
+                div {
+                    font-family: "Righteous", cursive;
+                    transform: translateY(5px);
+                    .nameOfTheProject {
+                        font-size: 1.5vw;
+                        transform: translateY(5px);
+                    }
+                    img {
+                        height: 40px;
+                        margin: 14px;
+                    }
+                    .dipstats {
+                        height: auto;
+                    }
+                    .prjDesc {
+                        font-family: "Ubuntu", sans-serif;
+                        margin-left: 1.5vw;
+                        font-size: 1vw;
+                    }
+                    p:nth-child(2) {
+                        label {
+                            font-size: 1vw;
+                        }
+                    }
+                }
+            }
+            .projCards:nth-child(3) {
+                display: block;
+            }
+        }
+    }
+}
+
+section:nth-child(4) {
+    min-height: 1vh;
+    max-height: 2vh;
+}
+
+@media (max-width: 500px) {
+    section:nth-child(1) {
+        .line {
+            label {
+                margin: 2vw;
+                color: rgb(109, 177, 241);
+                font-size: 9vw;
+                animation: line 0.3s ease-in;
+            }
+        }
+        .holder {
+            display: flex;
+            flex-direction: column-reverse;
+            justify-content: center;
+            .dp {
+                img {
+                    width: 70vw;
+                    height: auto;
+                    animation: loadimgmob 0.7s linear;
+                    flex: 1;
+                    transform: translateX(0vw);
+                }
+            }
+            .menu {
+                margin-top: 2vh;
+                animation: menumob 1s ease-in-out;
+                flex: 1;
+                background-image: url("/menu-ico.png");
+                background-repeat: no-repeat;
+                background-position: center;
+                background-size: contain;
+                transform: translateX(0vw);
+                p {
+                    font-size: 8vw;
+                    color: white;
+                }
+            }
+        }
+    }
+    section:nth-child(2) {
+        font-family: "Righteous", cursive;
+        .headline {
+            width: 100vw;
+            justify-content: center;
+            .backTitle {
+                color: #3a5dd7;
+                margin: 0 auto;
+                width: 100vw;
+                z-index: -200;
+                font-size: 20vw;
+                position: absolute;
+                transform: translate(0vh, -4vh);
+            }
+            .frontTitle {
+                color: #3a5dd7;
+                margin: 0 auto;
+                width: 100vw;
+                z-index: 200;
+                position: absolute;
+                font-size: 15vw;
+                transform: translate(11vw, 5vh);
+            }
+        }
+        .aboutCardHolder {
+            position: absolute;
+            height: 70vh;
+            width: 90vw;
+            justify-self: center;
+            margin-top: 22vh;
+            margin-left: 5vw;
+            background-image: url("/about-dp.jpg");
+            background-position: center;
+            .aboutCard {
+                display: flex;
+                flex-direction: column;
+                display: none;
+                .mypic {
+                    img {
+                        height: 100vw;
+                    }
+                    overflow: hidden;
+                    display: none;
+                }
+                .aboutme {
+                    label {
+                        font-family: "Righteous", cursive;
+                        padding: 2vw;
+                        font-size: 3vw;
+                        color: #3a5dd7;
+                        position: absolute;
+                    }
+                    label:nth-child(1) {
+                        z-index: -3300000;
+                        font-size: 4vw;
+                        color: #3a5dd7;
+                        opacity: 0.1;
+                        transform: translate(-2vw, -4vh);
+                    }
+                    .paragraph {
+                        font-family: "Ubuntu", sans-serif;
+                        font-size: calc(11px + 1vw);
+                        position: absolute;
+                        padding-top: 5vw;
+                        transform: translateY(3vh);
+                        color: rgb(21, 175, 175);
+                        text-align: right;
+                        margin-top: auto;
+                        display: none;
+                    }
+                }
+            }
+            .paragraphMobile {
+                display: block;
+                font-family: "Ubuntu", sans-serif;
+                font-size: calc(3.4vh);
+                padding: 10vw;
+                color: rgb(255, 255, 255);
+                text-align: justify;
+                margin-top: auto;
+                background-color: #3a5dd7;
+                height: 100%;
+                opacity: 0.9;
+                border-radius: 20px;
+            }
+        }
+    }
+    section:nth-child(3) {
+        font-family: "Righteous", cursive;
+        height: 200vh;
+        .headline {
+            width: 100vw;
+            justify-content: center;
+            .backTitle {
+                color: #3a5dd7;
+                margin: 0 auto;
+                width: 100vw;
+                z-index: -200;
+                font-size: 20vw;
+                position: absolute;
+                transform: translate(0vh, -4vh);
+            }
+            .frontTitle {
+                color: #3a5dd7;
+                margin: 0 auto;
+                width: 100vw;
+                z-index: 200;
+                position: absolute;
+                font-size: 15vw;
+                transform: translate(11vw, 5vh);
+            }
+        }
+        .gitCardHolder {
+            position: absolute;
+            height: 50vh;
+            width: 100vw;
+            justify-self: center;
+            margin-top: 18vh;
+            .gitCard {
+                display: flex;
+                flex-direction: row;
+                flex-wrap: wrap;
+                .projCards {
+                    min-width: 60vw;
+                    height: auto;
+                    border-color: #3a5dd7;
+                    border-radius: 10px;
+                    margin-top: 5vw;
+                    flex: 1;
+                    text-align: left;
+                    div {
+                        font-family: "Righteous", cursive;
+                        transform: translateY(5px);
+                        .nameOfTheProject {
+                            font-size: 5vw;
+                            transform: translateY(5px);
+                        }
+                        img {
+                            height: 30px;
+                            margin: 10px;
+                        }
+                        .prjDesc {
+                            font-family: "Ubuntu", sans-serif;
+                            margin-left: 4vw;
+                            font-size: 4vw;
+                        }
+                        p:nth-child(2) {
+                            label {
+                                font-size: 1vh;
+                            }
+                        }
+                        .dipstats {
+                            width: 90vw;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 1200px) and (min-width: 500px) {
+    section:nth-child(1) {
+        background: none;
+        font-family: "Righteous", cursive;
+        background-color: #3a5dd7;
+        .line {
+            label {
+                margin: 2vh;
+                color: rgb(109, 177, 241);
+                font-size: 9vw;
+                animation: line 0.3s ease-in;
+            }
+        }
+        .holder {
+            display: flex;
+            flex-direction: row;
+            .dp {
+                img {
+                    height: calc(100px + 25vw);
+                    transform: translateX(-10vw);
+                    animation: loadimg 1s linear;
+                    flex: 1;
+                }
+            }
+            .menu {
+                transform: translate(-10vw, 3vh);
+                animation: menu 1s ease-in-out;
+                flex: 1;
+                background-image: url("/menu-ico.png");
+                background-repeat: no-repeat;
+                background-position: center;
+                background-size: contain;
+                p {
+                    transform: translateY(10px);
+                    font-size: 4vw;
+                    color: white;
+                }
+            }
+        }
+    }
+    section:nth-child(2) {
+        font-family: "Righteous", cursive;
+        .headline {
+            width: 100vw;
+            justify-content: center;
+            .backTitle {
+                color: rgb(214, 235, 247);
+                margin: 0 auto;
+                width: 100vw;
+                z-index: -200;
+                font-size: 15vh;
+                position: absolute;
+                transform: translateX(-9vw);
+            }
+            .frontTitle {
+                color: #3a5dd7;
+                margin: 0 auto;
+                width: 100vw;
+                z-index: 200;
+                position: absolute;
+                font-size: 7vh;
+                transform: translate(4vw, 12vh);
+            }
+        }
+        .aboutCardHolder {
+            position: absolute;
+            height: 70vh;
+            width: 90vw;
+            justify-self: center;
+            margin-top: 25vh;
+            margin-left: 5vw;
+            background-image: url("/about-dp.jpg");
+            background-position: center;
+            .aboutCard {
+                display: flex;
+                flex-direction: column;
+                display: none;
+                .mypic {
+                    img {
+                        height: 100vw;
+                    }
+                    overflow: hidden;
+                    display: none;
+                }
+                .aboutme {
+                    label {
+                        font-family: "Righteous", cursive;
+                        padding: 2vw;
+                        font-size: 3vw;
+                        color: #3a5dd7;
+                        position: absolute;
+                    }
+                    label:nth-child(1) {
+                        z-index: -3300000;
+                        font-size: 4vw;
+                        color: #3a5dd7;
+                        opacity: 0.1;
+                        transform: translate(-2vw, -4vh);
+                    }
+                    .paragraph {
+                        font-family: "Ubuntu", sans-serif;
+                        font-size: calc(11px + 1vw);
+                        position: absolute;
+                        padding-top: 5vw;
+                        transform: translateY(3vh);
+                        color: rgb(21, 175, 175);
+                        text-align: right;
+                        margin-top: auto;
+                        display: none;
+                    }
+                }
+            }
+            .paragraphMobile {
+                display: block;
+                font-family: "Ubuntu", sans-serif;
+                font-size: calc(5vh);
+                padding: 10vw;
+                color: rgb(255, 255, 255);
+                text-align: justify;
+                margin-top: auto;
+                background-color: #3a5dd7;
+                height: 100%;
+                opacity: 0.9;
+            }
+        }
+    }
+    section:nth-child(3) {
+        font-family: "Righteous", cursive;
+        height: 150vh;
+        .headline {
+            width: 100vw;
+            justify-content: center;
+            .backTitle {
+                color: #3a5dd7;
+                margin: 0 auto;
+                width: 100vw;
+                z-index: -200;
+                font-size: 20vh;
+                position: absolute;
+                transform: translate(0vh, -4vh);
+            }
+            .frontTitle {
+                color: #3a5dd7;
+                margin: 0 auto;
+                width: 100vw;
+                z-index: 200;
+                position: absolute;
+                font-size: 13vh;
+                transform: translate(11vw, 5vh);
+            }
+        }
+        .gitCardHolder {
+            position: absolute;
+            height: 50vh;
+            width: 100vw;
+            justify-self: center;
+            margin-top: 16vw;
+            .gitCard {
+                display: flex;
+                flex-direction: row;
+                flex-wrap: wrap;
+                .projCards {
+                    min-width: 40vw;
+                    height: auto;
+                    border-color: #3a5dd7;
+                    border-radius: 10px;
+                    margin-top: 2vw;
+                    margin-left: 2vw;
+                    margin-right: 2vw;
+                    flex: 1;
+                    text-align: left;
+                    div {
+                        font-family: "Righteous", cursive;
+                        transform: translateY(5px);
+                        .nameOfTheProject {
+                            font-size: 3vw;
+                            transform: translateY(5px);
+                        }
+                        img {
+                            height: 50px;
+                            margin: 14px;
+                        }
+                        .prjDesc {
+                            font-family: "Ubuntu", sans-serif;
+                            margin-left: 4vw;
+                            font-size: 2.2vw;
+                        }
+                        p:nth-child(2) {
+                            label {
+                                font-size: 1vh;
+                            }
+                        }
+                    }
+                }
+                .projCards:nth-child(4) {
+                    display: none;
+                }
+            }
+        }
+    }
+}
+
+@keyframes fadein {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes loadimg {
+    0% {
+        transform: translateX(-50vw);
+        opacity: 0;
+    }
+    80% {
+        transform: translateX(-2vw);
+        opacity: 0.9;
+    }
+    90% {
+        transform: translateX(-12vw);
+        opacity: 0.95;
+    }
+    100% {
+        transform: translateX(-10vw);
+        opacity: 1;
+    }
+}
+
+@keyframes loadimgmob {
+    0% {
+        transform: scale(0.1);
+        opacity: 0;
+    }
+    100% {
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+
+@keyframes line {
+    0% {
+        transform: translateY(-300vw);
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+        transform: initial;
+    }
+}
+
+@keyframes menu {
+    0% {
+        transform: translate(-10vw, 100vw);
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+        transform: translate(-10vw, 3vh);
+    }
+}
+
+@keyframes menumob {
+    0% {
+        transform: translate(0vw, 100vw);
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+        transform: translate(0vw, 3vh);
+    }
+}
+
+//Goto Top Buttoon
+#myBtn {
+    display: none;
+    /* Hidden by default */
+    position: fixed;
+    /* Fixed/sticky position */
+    bottom: 20px;
+    /* Place the button at the bottom of the page */
+    right: 30px;
+    /* Place the button 30px from the right */
+    z-index: 99;
+    /* Make sure it does not overlap */
+    border: none;
+    /* Remove borders */
+    outline: none;
+    /* Remove outline */
+    background-color: red;
+    /* Set a background color */
+    color: white;
+    /* Text color */
+    cursor: pointer;
+    /* Add a mouse pointer on hover */
+    padding: 15px;
+    /* Some padding */
+    border-radius: 10px;
+    /* Rounded corners */
+    font-size: 18px;
+    /* Increase font size */
+}
+
+#myBtn:hover {
+    background-color: #555;
+    /* Add a dark-grey background on hover */
+}
