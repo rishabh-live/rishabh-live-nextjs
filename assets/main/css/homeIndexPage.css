@@ -19,14 +19,14 @@ section {
   overflow: auto;
 }
 
-section:nth-child(1) {
+.main-page-section-one {
   min-height: 100vh;
   background: none;
   font-family: "Righteous", cursive;
   background-color: #3a5dd7;
 }
 
-section:nth-child(1) .line label {
+.main-page-section-one .line label {
   margin: 1vh;
   color: #6db1f1;
   font-size: 9vw;
@@ -34,7 +34,7 @@ section:nth-child(1) .line label {
           animation: line 0.3s ease-in;
 }
 
-section:nth-child(1) .holder {
+.main-page-section-one .holder {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -44,7 +44,7 @@ section:nth-child(1) .holder {
           flex-direction: row;
 }
 
-section:nth-child(1) .holder .dp img {
+.main-page-section-one .holder .dp img {
   height: calc(100px + 25vw);
   -webkit-transform: translateX(-10vw);
           transform: translateX(-10vw);
@@ -56,7 +56,7 @@ section:nth-child(1) .holder .dp img {
   border-radius: 50%;
 }
 
-section:nth-child(1) .holder .menu {
+.main-page-section-one .holder .menu {
   margin-top: 5vh;
   -webkit-transform: translate(-10vw, 3vh);
           transform: translate(-10vw, 3vh);
@@ -71,7 +71,7 @@ section:nth-child(1) .holder .menu {
   background-size: contain;
 }
 
-section:nth-child(1) .holder .menu p {
+.main-page-section-one .holder .menu p {
   padding-top: 2vh;
   -webkit-transform: translateY(10px);
           transform: translateY(10px);
@@ -79,24 +79,24 @@ section:nth-child(1) .holder .menu p {
   color: white;
 }
 
-section:nth-child(1) .holder .menu p a {
+.main-page-section-one .holder .menu p a {
   text-decoration: none;
   color: white;
 }
 
-section:nth-child(2) {
+.main-page-section-two {
   min-height: 100vh;
   font-family: "Righteous", cursive;
 }
 
-section:nth-child(2) .headline {
+.main-page-section-two .headline {
   width: 100vw;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
 }
 
-section:nth-child(2) .headline .backTitle {
+.main-page-section-two .headline .backTitle {
   color: #3a5dd7;
   margin: 0 auto;
   width: 100vw;
@@ -108,7 +108,7 @@ section:nth-child(2) .headline .backTitle {
   opacity: 0.1;
 }
 
-section:nth-child(2) .headline .frontTitle {
+.main-page-section-two .headline .frontTitle {
   color: #3a5dd7;
   margin: 0 auto;
   width: 100vw;
@@ -119,7 +119,7 @@ section:nth-child(2) .headline .frontTitle {
           transform: translate(4vw, 12vh);
 }
 
-section:nth-child(2) .aboutCardHolder {
+.main-page-section-two .aboutCardHolder {
   position: absolute;
   height: 50vh;
   width: 70vw;
@@ -130,24 +130,24 @@ section:nth-child(2) .aboutCardHolder {
   border-radius: 20px;
 }
 
-section:nth-child(2) .aboutCardHolder .aboutCard {
+.main-page-section-two .aboutCardHolder .aboutCard {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   border-radius: 20px;
 }
 
-section:nth-child(2) .aboutCardHolder .aboutCard .mypic img {
+.main-page-section-two .aboutCardHolder .aboutCard .mypic img {
   max-height: 50vh;
   border-top-left-radius: 20px;
   border-bottom-left-radius: 20px;
 }
 
-section:nth-child(2) .aboutCardHolder .aboutCard .aboutme {
+.main-page-section-two .aboutCardHolder .aboutCard .aboutme {
   border-radius: 20px;
 }
 
-section:nth-child(2) .aboutCardHolder .aboutCard .aboutme label {
+.main-page-section-two .aboutCardHolder .aboutCard .aboutme label {
   font-family: "Righteous", cursive;
   padding: 2vw;
   font-size: 3vw;
@@ -155,7 +155,7 @@ section:nth-child(2) .aboutCardHolder .aboutCard .aboutme label {
   position: absolute;
 }
 
-section:nth-child(2) .aboutCardHolder .aboutCard .aboutme label:nth-child(1) {
+.main-page-section-two .aboutCardHolder .aboutCard .aboutme label:nth-child(1) {
   z-index: -3300000;
   font-size: 4vw;
   color: #3a5dd7;
@@ -164,7 +164,7 @@ section:nth-child(2) .aboutCardHolder .aboutCard .aboutme label:nth-child(1) {
           transform: translate(-2vw, -4vh);
 }
 
-section:nth-child(2) .aboutCardHolder .aboutCard .aboutme .paragraph {
+.main-page-section-two .aboutCardHolder .aboutCard .aboutme .paragraph {
   font-family: "Ubuntu", sans-serif;
   font-size: calc(11px + 1vw);
   position: absolute;
@@ -176,23 +176,23 @@ section:nth-child(2) .aboutCardHolder .aboutCard .aboutme .paragraph {
   margin-top: auto;
 }
 
-section:nth-child(2) .aboutCardHolder .paragraphMobile {
+.main-page-section-two .aboutCardHolder .paragraphMobile {
   display: none;
 }
 
-section:nth-child(3) {
+.main-page-section-three {
   font-family: "Righteous", cursive;
   max-height: initial;
 }
 
-section:nth-child(3) .headline {
+.main-page-section-three .headline {
   width: 100vw;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
 }
 
-section:nth-child(3) .headline .backTitle {
+.main-page-section-three .headline .backTitle {
   color: #3a5dd7;
   margin: 0 auto;
   width: 100vw;
@@ -204,7 +204,7 @@ section:nth-child(3) .headline .backTitle {
   opacity: 0.1;
 }
 
-section:nth-child(3) .headline .frontTitle {
+.main-page-section-three .headline .frontTitle {
   color: #3a5dd7;
   margin: 0 auto;
   width: 100vw;
@@ -215,7 +215,7 @@ section:nth-child(3) .headline .frontTitle {
           transform: translate(4vw, 12vh);
 }
 
-section:nth-child(3) .gitCardHolder {
+.main-page-section-three .gitCardHolder {
   position: absolute;
   height: 50vh;
   width: 100vw;
@@ -224,7 +224,7 @@ section:nth-child(3) .gitCardHolder {
   margin-top: 18vh;
 }
 
-section:nth-child(3) .gitCardHolder .gitCard {
+.main-page-section-three .gitCardHolder .gitCard {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -236,7 +236,7 @@ section:nth-child(3) .gitCardHolder .gitCard {
       flex-wrap: wrap;
 }
 
-section:nth-child(3) .gitCardHolder .gitCard .projCards {
+.main-page-section-three .gitCardHolder .gitCard .projCards {
   min-width: 25vw;
   height: auto;
   border-color: #3a5dd7;
@@ -250,55 +250,55 @@ section:nth-child(3) .gitCardHolder .gitCard .projCards {
   text-align: left;
 }
 
-section:nth-child(3) .gitCardHolder .gitCard .projCards div {
+.main-page-section-three .gitCardHolder .gitCard .projCards div {
   font-family: "Righteous", cursive;
   -webkit-transform: translateY(5px);
           transform: translateY(5px);
 }
 
-section:nth-child(3) .gitCardHolder .gitCard .projCards div .nameOfTheProject {
+.main-page-section-three .gitCardHolder .gitCard .projCards div .nameOfTheProject {
   font-size: 1.5vw;
   -webkit-transform: translateY(5px);
           transform: translateY(5px);
 }
 
-section:nth-child(3) .gitCardHolder .gitCard .projCards div img {
+.main-page-section-three .gitCardHolder .gitCard .projCards div img {
   height: 40px;
   margin: 14px;
 }
 
-section:nth-child(3) .gitCardHolder .gitCard .projCards div .dipstats {
+.main-page-section-three .gitCardHolder .gitCard .projCards div .dipstats {
   height: auto;
 }
 
-section:nth-child(3) .gitCardHolder .gitCard .projCards div .prjDesc {
+.main-page-section-three .gitCardHolder .gitCard .projCards div .prjDesc {
   font-family: "Ubuntu", sans-serif;
   margin-left: 1.5vw;
   font-size: 1vw;
 }
 
-section:nth-child(3) .gitCardHolder .gitCard .projCards div p:nth-child(2) label {
+.main-page-section-three .gitCardHolder .gitCard .projCards div p:nth-child(2) label {
   font-size: 1vw;
 }
 
-section:nth-child(3) .gitCardHolder .gitCard .projCards:nth-child(3) {
+.main-page-section-three .gitCardHolder .gitCard .projCards:nth-child(3) {
   display: block;
 }
 
-section:nth-child(4) {
+.main-page-section-four {
   min-height: 1vh;
   max-height: 2vh;
 }
 
 @media (max-width: 500px) {
-  section:nth-child(1) .line label {
+  .main-page-section-one .line label {
     margin: 2vw;
     color: #6db1f1;
     font-size: 9vw;
     -webkit-animation: line 0.3s ease-in;
             animation: line 0.3s ease-in;
   }
-  section:nth-child(1) .holder {
+  .main-page-section-one .holder {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -310,7 +310,7 @@ section:nth-child(4) {
         -ms-flex-pack: center;
             justify-content: center;
   }
-  section:nth-child(1) .holder .dp img {
+  .main-page-section-one .holder .dp img {
     width: 70vw;
     height: auto;
     -webkit-animation: loadimgmob 0.7s linear;
@@ -321,7 +321,7 @@ section:nth-child(4) {
     -webkit-transform: translateX(0vw);
             transform: translateX(0vw);
   }
-  section:nth-child(1) .holder .menu {
+  .main-page-section-one .holder .menu {
     margin-top: 2vh;
     -webkit-animation: menumob 1s ease-in-out;
             animation: menumob 1s ease-in-out;
@@ -335,20 +335,20 @@ section:nth-child(4) {
     -webkit-transform: translateX(0vw);
             transform: translateX(0vw);
   }
-  section:nth-child(1) .holder .menu p {
+  .main-page-section-one .holder .menu p {
     font-size: 8vw;
     color: white;
   }
-  section:nth-child(2) {
+  .main-page-section-two {
     font-family: "Righteous", cursive;
   }
-  section:nth-child(2) .headline {
+  .main-page-section-two .headline {
     width: 100vw;
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
   }
-  section:nth-child(2) .headline .backTitle {
+  .main-page-section-two .headline .backTitle {
     color: #3a5dd7;
     margin: 0 auto;
     width: 100vw;
@@ -358,7 +358,7 @@ section:nth-child(4) {
     -webkit-transform: translate(0vh, -4vh);
             transform: translate(0vh, -4vh);
   }
-  section:nth-child(2) .headline .frontTitle {
+  .main-page-section-two .headline .frontTitle {
     color: #3a5dd7;
     margin: 0 auto;
     width: 100vw;
@@ -368,7 +368,7 @@ section:nth-child(4) {
     -webkit-transform: translate(11vw, 5vh);
             transform: translate(11vw, 5vh);
   }
-  section:nth-child(2) .aboutCardHolder {
+  .main-page-section-two .aboutCardHolder {
     position: absolute;
     height: 70vh;
     width: 90vw;
@@ -379,7 +379,7 @@ section:nth-child(4) {
     background-image: url("/about-dp.jpg");
     background-position: center;
   }
-  section:nth-child(2) .aboutCardHolder .aboutCard {
+  .main-page-section-two .aboutCardHolder .aboutCard {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -389,21 +389,21 @@ section:nth-child(4) {
             flex-direction: column;
     display: none;
   }
-  section:nth-child(2) .aboutCardHolder .aboutCard .mypic {
+  .main-page-section-two .aboutCardHolder .aboutCard .mypic {
     overflow: hidden;
     display: none;
   }
-  section:nth-child(2) .aboutCardHolder .aboutCard .mypic img {
+  .main-page-section-two .aboutCardHolder .aboutCard .mypic img {
     height: 100vw;
   }
-  section:nth-child(2) .aboutCardHolder .aboutCard .aboutme label {
+  .main-page-section-two .aboutCardHolder .aboutCard .aboutme label {
     font-family: "Righteous", cursive;
     padding: 2vw;
     font-size: 3vw;
     color: #3a5dd7;
     position: absolute;
   }
-  section:nth-child(2) .aboutCardHolder .aboutCard .aboutme label:nth-child(1) {
+  .main-page-section-two .aboutCardHolder .aboutCard .aboutme label:nth-child(1) {
     z-index: -3300000;
     font-size: 4vw;
     color: #3a5dd7;
@@ -411,7 +411,7 @@ section:nth-child(4) {
     -webkit-transform: translate(-2vw, -4vh);
             transform: translate(-2vw, -4vh);
   }
-  section:nth-child(2) .aboutCardHolder .aboutCard .aboutme .paragraph {
+  .main-page-section-two .aboutCardHolder .aboutCard .aboutme .paragraph {
     font-family: "Ubuntu", sans-serif;
     font-size: calc(11px + 1vw);
     position: absolute;
@@ -423,7 +423,7 @@ section:nth-child(4) {
     margin-top: auto;
     display: none;
   }
-  section:nth-child(2) .aboutCardHolder .paragraphMobile {
+  .main-page-section-two .aboutCardHolder .paragraphMobile {
     display: block;
     font-family: "Ubuntu", sans-serif;
     font-size: calc(3.4vh);
@@ -436,17 +436,17 @@ section:nth-child(4) {
     opacity: 0.9;
     border-radius: 20px;
   }
-  section:nth-child(3) {
+  .main-page-section-three {
     font-family: "Righteous", cursive;
     height: 200vh;
   }
-  section:nth-child(3) .headline {
+  .main-page-section-three .headline {
     width: 100vw;
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
   }
-  section:nth-child(3) .headline .backTitle {
+  .main-page-section-three .headline .backTitle {
     color: #3a5dd7;
     margin: 0 auto;
     width: 100vw;
@@ -456,7 +456,7 @@ section:nth-child(4) {
     -webkit-transform: translate(0vh, -4vh);
             transform: translate(0vh, -4vh);
   }
-  section:nth-child(3) .headline .frontTitle {
+  .main-page-section-three .headline .frontTitle {
     color: #3a5dd7;
     margin: 0 auto;
     width: 100vw;
@@ -466,7 +466,7 @@ section:nth-child(4) {
     -webkit-transform: translate(11vw, 5vh);
             transform: translate(11vw, 5vh);
   }
-  section:nth-child(3) .gitCardHolder {
+  .main-page-section-three .gitCardHolder {
     position: absolute;
     height: 50vh;
     width: 100vw;
@@ -474,7 +474,7 @@ section:nth-child(4) {
         justify-self: center;
     margin-top: 18vh;
   }
-  section:nth-child(3) .gitCardHolder .gitCard {
+  .main-page-section-three .gitCardHolder .gitCard {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -485,7 +485,7 @@ section:nth-child(4) {
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
   }
-  section:nth-child(3) .gitCardHolder .gitCard .projCards {
+  .main-page-section-three .gitCardHolder .gitCard .projCards {
     min-width: 60vw;
     height: auto;
     border-color: #3a5dd7;
@@ -496,47 +496,47 @@ section:nth-child(4) {
             flex: 1;
     text-align: left;
   }
-  section:nth-child(3) .gitCardHolder .gitCard .projCards div {
+  .main-page-section-three .gitCardHolder .gitCard .projCards div {
     font-family: "Righteous", cursive;
     -webkit-transform: translateY(5px);
             transform: translateY(5px);
   }
-  section:nth-child(3) .gitCardHolder .gitCard .projCards div .nameOfTheProject {
+  .main-page-section-three .gitCardHolder .gitCard .projCards div .nameOfTheProject {
     font-size: 5vw;
     -webkit-transform: translateY(5px);
             transform: translateY(5px);
   }
-  section:nth-child(3) .gitCardHolder .gitCard .projCards div img {
+  .main-page-section-three .gitCardHolder .gitCard .projCards div img {
     height: 30px;
     margin: 10px;
   }
-  section:nth-child(3) .gitCardHolder .gitCard .projCards div .prjDesc {
+  .main-page-section-three .gitCardHolder .gitCard .projCards div .prjDesc {
     font-family: "Ubuntu", sans-serif;
     margin-left: 4vw;
     font-size: 4vw;
   }
-  section:nth-child(3) .gitCardHolder .gitCard .projCards div p:nth-child(2) label {
+  .main-page-section-three .gitCardHolder .gitCard .projCards div p:nth-child(2) label {
     font-size: 1vh;
   }
-  section:nth-child(3) .gitCardHolder .gitCard .projCards div .dipstats {
+  .main-page-section-three .gitCardHolder .gitCard .projCards div .dipstats {
     width: 90vw;
   }
 }
 
 @media (max-width: 1200px) and (min-width: 500px) {
-  section:nth-child(1) {
+  .main-page-section-one {
     background: none;
     font-family: "Righteous", cursive;
     background-color: #3a5dd7;
   }
-  section:nth-child(1) .line label {
+  .main-page-section-one .line label {
     margin: 2vh;
     color: #6db1f1;
     font-size: 9vw;
     -webkit-animation: line 0.3s ease-in;
             animation: line 0.3s ease-in;
   }
-  section:nth-child(1) .holder {
+  .main-page-section-one .holder {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -545,7 +545,7 @@ section:nth-child(4) {
         -ms-flex-direction: row;
             flex-direction: row;
   }
-  section:nth-child(1) .holder .dp img {
+  .main-page-section-one .holder .dp img {
     height: calc(100px + 25vw);
     -webkit-transform: translateX(-10vw);
             transform: translateX(-10vw);
@@ -555,7 +555,7 @@ section:nth-child(4) {
         -ms-flex: 1;
             flex: 1;
   }
-  section:nth-child(1) .holder .menu {
+  .main-page-section-one .holder .menu {
     -webkit-transform: translate(-10vw, 3vh);
             transform: translate(-10vw, 3vh);
     -webkit-animation: menu 1s ease-in-out;
@@ -568,22 +568,22 @@ section:nth-child(4) {
     background-position: center;
     background-size: contain;
   }
-  section:nth-child(1) .holder .menu p {
+  .main-page-section-one .holder .menu p {
     -webkit-transform: translateY(10px);
             transform: translateY(10px);
     font-size: 4vw;
     color: white;
   }
-  section:nth-child(2) {
+  .main-page-section-two {
     font-family: "Righteous", cursive;
   }
-  section:nth-child(2) .headline {
+  .main-page-section-two .headline {
     width: 100vw;
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
   }
-  section:nth-child(2) .headline .backTitle {
+  .main-page-section-two .headline .backTitle {
     color: #d6ebf7;
     margin: 0 auto;
     width: 100vw;
@@ -593,7 +593,7 @@ section:nth-child(4) {
     -webkit-transform: translateX(-9vw);
             transform: translateX(-9vw);
   }
-  section:nth-child(2) .headline .frontTitle {
+  .main-page-section-two .headline .frontTitle {
     color: #3a5dd7;
     margin: 0 auto;
     width: 100vw;
@@ -603,7 +603,7 @@ section:nth-child(4) {
     -webkit-transform: translate(4vw, 12vh);
             transform: translate(4vw, 12vh);
   }
-  section:nth-child(2) .aboutCardHolder {
+  .main-page-section-two .aboutCardHolder {
     position: absolute;
     height: 70vh;
     width: 90vw;
@@ -614,7 +614,7 @@ section:nth-child(4) {
     background-image: url("/about-dp.jpg");
     background-position: center;
   }
-  section:nth-child(2) .aboutCardHolder .aboutCard {
+  .main-page-section-two .aboutCardHolder .aboutCard {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -624,21 +624,21 @@ section:nth-child(4) {
             flex-direction: column;
     display: none;
   }
-  section:nth-child(2) .aboutCardHolder .aboutCard .mypic {
+  .main-page-section-two .aboutCardHolder .aboutCard .mypic {
     overflow: hidden;
     display: none;
   }
-  section:nth-child(2) .aboutCardHolder .aboutCard .mypic img {
+  .main-page-section-two .aboutCardHolder .aboutCard .mypic img {
     height: 100vw;
   }
-  section:nth-child(2) .aboutCardHolder .aboutCard .aboutme label {
+  .main-page-section-two .aboutCardHolder .aboutCard .aboutme label {
     font-family: "Righteous", cursive;
     padding: 2vw;
     font-size: 3vw;
     color: #3a5dd7;
     position: absolute;
   }
-  section:nth-child(2) .aboutCardHolder .aboutCard .aboutme label:nth-child(1) {
+  .main-page-section-two .aboutCardHolder .aboutCard .aboutme label:nth-child(1) {
     z-index: -3300000;
     font-size: 4vw;
     color: #3a5dd7;
@@ -646,7 +646,7 @@ section:nth-child(4) {
     -webkit-transform: translate(-2vw, -4vh);
             transform: translate(-2vw, -4vh);
   }
-  section:nth-child(2) .aboutCardHolder .aboutCard .aboutme .paragraph {
+  .main-page-section-two .aboutCardHolder .aboutCard .aboutme .paragraph {
     font-family: "Ubuntu", sans-serif;
     font-size: calc(11px + 1vw);
     position: absolute;
@@ -658,7 +658,7 @@ section:nth-child(4) {
     margin-top: auto;
     display: none;
   }
-  section:nth-child(2) .aboutCardHolder .paragraphMobile {
+  .main-page-section-two .aboutCardHolder .paragraphMobile {
     display: block;
     font-family: "Ubuntu", sans-serif;
     font-size: calc(5vh);
@@ -670,17 +670,17 @@ section:nth-child(4) {
     height: 100%;
     opacity: 0.9;
   }
-  section:nth-child(3) {
+  .main-page-section-three {
     font-family: "Righteous", cursive;
     height: 150vh;
   }
-  section:nth-child(3) .headline {
+  .main-page-section-three .headline {
     width: 100vw;
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
   }
-  section:nth-child(3) .headline .backTitle {
+  .main-page-section-three .headline .backTitle {
     color: #3a5dd7;
     margin: 0 auto;
     width: 100vw;
@@ -690,7 +690,7 @@ section:nth-child(4) {
     -webkit-transform: translate(0vh, -4vh);
             transform: translate(0vh, -4vh);
   }
-  section:nth-child(3) .headline .frontTitle {
+  .main-page-section-three .headline .frontTitle {
     color: #3a5dd7;
     margin: 0 auto;
     width: 100vw;
@@ -700,7 +700,7 @@ section:nth-child(4) {
     -webkit-transform: translate(11vw, 5vh);
             transform: translate(11vw, 5vh);
   }
-  section:nth-child(3) .gitCardHolder {
+  .main-page-section-three .gitCardHolder {
     position: absolute;
     height: 50vh;
     width: 100vw;
@@ -708,7 +708,7 @@ section:nth-child(4) {
         justify-self: center;
     margin-top: 16vw;
   }
-  section:nth-child(3) .gitCardHolder .gitCard {
+  .main-page-section-three .gitCardHolder .gitCard {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -719,7 +719,7 @@ section:nth-child(4) {
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
   }
-  section:nth-child(3) .gitCardHolder .gitCard .projCards {
+  .main-page-section-three .gitCardHolder .gitCard .projCards {
     min-width: 40vw;
     height: auto;
     border-color: #3a5dd7;
@@ -732,29 +732,29 @@ section:nth-child(4) {
             flex: 1;
     text-align: left;
   }
-  section:nth-child(3) .gitCardHolder .gitCard .projCards div {
+  .main-page-section-three .gitCardHolder .gitCard .projCards div {
     font-family: "Righteous", cursive;
     -webkit-transform: translateY(5px);
             transform: translateY(5px);
   }
-  section:nth-child(3) .gitCardHolder .gitCard .projCards div .nameOfTheProject {
+  .main-page-section-three .gitCardHolder .gitCard .projCards div .nameOfTheProject {
     font-size: 3vw;
     -webkit-transform: translateY(5px);
             transform: translateY(5px);
   }
-  section:nth-child(3) .gitCardHolder .gitCard .projCards div img {
+  .main-page-section-three .gitCardHolder .gitCard .projCards div img {
     height: 50px;
     margin: 14px;
   }
-  section:nth-child(3) .gitCardHolder .gitCard .projCards div .prjDesc {
+  .main-page-section-three .gitCardHolder .gitCard .projCards div .prjDesc {
     font-family: "Ubuntu", sans-serif;
     margin-left: 4vw;
     font-size: 2.2vw;
   }
-  section:nth-child(3) .gitCardHolder .gitCard .projCards div p:nth-child(2) label {
+  .main-page-section-three .gitCardHolder .gitCard .projCards div p:nth-child(2) label {
     font-size: 1vh;
   }
-  section:nth-child(3) .gitCardHolder .gitCard .projCards:nth-child(4) {
+  .main-page-section-three .gitCardHolder .gitCard .projCards:nth-child(4) {
     display: none;
   }
 }

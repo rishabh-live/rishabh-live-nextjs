@@ -6,7 +6,7 @@
     box-sizing: border-box;
 }
 
-section:nth-child(1) {
+.blogs-section-one {
     nav {
         .banner {
             width: 92vw;
@@ -25,7 +25,7 @@ section:nth-child(1) {
     }
 }
 
-section:nth-child(2) {
+.blogs-section-two {
     margin-top: 12px;
     .mainCard {
         width: 92vw;

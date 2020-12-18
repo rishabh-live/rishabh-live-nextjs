@@ -7,7 +7,7 @@
           box-sizing: border-box;
 }
 
-section:nth-child(1) nav .banner {
+.blogs-section-one nav .banner {
   width: 92vw;
   height: 30vh;
   overflow: hidden;
@@ -17,17 +17,17 @@ section:nth-child(1) nav .banner {
   border-bottom-right-radius: 20px;
 }
 
-section:nth-child(1) nav .banner img {
+.blogs-section-one nav .banner img {
   width: 92vw;
   -webkit-transform: translateY(-20%);
           transform: translateY(-20%);
 }
 
-section:nth-child(2) {
+.blogs-section-two {
   margin-top: 12px;
 }
 
-section:nth-child(2) .mainCard {
+.blogs-section-two .mainCard {
   width: 92vw;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -43,7 +43,7 @@ section:nth-child(2) .mainCard {
           justify-content: center;
 }
 
-section:nth-child(2) .mainCard .blogCard {
+.blogs-section-two .mainCard .blogCard {
   min-width: 20vw;
   max-width: 20vw;
   min-height: 450px;
@@ -58,13 +58,13 @@ section:nth-child(2) .mainCard .blogCard {
   transition: box-shadow 0.5s ease-in-out, -webkit-box-shadow 0.5s ease-in-out;
 }
 
-section:nth-child(2) .mainCard .blogCard .mainImage {
+.blogs-section-two .mainCard .blogCard .mainImage {
   border-top-left-radius: 22px;
   border-top-right-radius: 22px;
   width: 20vw;
 }
 
-section:nth-child(2) .mainCard .blogCard #title {
+.blogs-section-two .mainCard .blogCard #title {
   font-size: 29px;
   font-weight: bold;
   color: #420404;
@@ -73,7 +73,7 @@ section:nth-child(2) .mainCard .blogCard #title {
   padding: 1vh;
 }
 
-section:nth-child(2) .mainCard .blogCard #short {
+.blogs-section-two .mainCard .blogCard #short {
   margin: 0.5vw;
   text-align: justify;
   font-family: 'Balsamiq Sans', cursive;
@@ -83,7 +83,7 @@ section:nth-child(2) .mainCard .blogCard #short {
   overflow: hidden;
 }
 
-section:nth-child(2) .mainCard .blogCard #readMore {
+.blogs-section-two .mainCard .blogCard #readMore {
   outline: none;
   background-color: #0099ff;
   border: none;
@@ -94,13 +94,13 @@ section:nth-child(2) .mainCard .blogCard #readMore {
   transition: background-color 0.5s ease-in-out;
 }
 
-section:nth-child(2) .mainCard .blogCard #readMore:hover {
+.blogs-section-two .mainCard .blogCard #readMore:hover {
   background-color: #0084ff;
   -webkit-transition: background-color 0.3s ease-in-out;
   transition: background-color 0.3s ease-in-out;
 }
 
-section:nth-child(2) .mainCard .blogCard:hover {
+.blogs-section-two .mainCard .blogCard:hover {
   -webkit-box-shadow: 0px 0px 23px 13px #cecece;
           box-shadow: 0px 0px 23px 13px #cecece;
   -webkit-transition: -webkit-box-shadow 0.3s ease-in-out;

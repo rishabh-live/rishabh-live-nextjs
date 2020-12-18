@@ -19,7 +19,7 @@ section {
     overflow: auto;
 }
 
-section:nth-child(1) {
+.main-page-section-one {
     min-height: 100vh;
     background: none;
     font-family: "Righteous", cursive;
@@ -67,7 +67,7 @@ section:nth-child(1) {
     }
 }
 
-section:nth-child(2) {
+.main-page-section-two {
     min-height: 100vh;
     font-family: "Righteous", cursive;
     .headline {
@@ -145,7 +145,7 @@ section:nth-child(2) {
     }
 }
 
-section:nth-child(3) {
+.main-page-section-three {
     font-family: "Righteous", cursive;
     max-height: initial;
     .headline {
@@ -224,13 +224,13 @@ section:nth-child(3) {
     }
 }
 
-section:nth-child(4) {
+.main-page-section-four {
     min-height: 1vh;
     max-height: 2vh;
 }
 
 @media (max-width: 500px) {
-    section:nth-child(1) {
+    .main-page-section-one {
         .line {
             label {
                 margin: 2vw;
@@ -268,7 +268,7 @@ section:nth-child(4) {
             }
         }
     }
-    section:nth-child(2) {
+    .main-page-section-two {
         font-family: "Righteous", cursive;
         .headline {
             width: 100vw;
@@ -355,7 +355,7 @@ section:nth-child(4) {
             }
         }
     }
-    section:nth-child(3) {
+    .main-page-section-three {
         font-family: "Righteous", cursive;
         height: 200vh;
         .headline {
@@ -430,7 +430,7 @@ section:nth-child(4) {
 }
 
 @media (max-width: 1200px) and (min-width: 500px) {
-    section:nth-child(1) {
+    .main-page-section-one {
         background: none;
         font-family: "Righteous", cursive;
         background-color: #3a5dd7;
@@ -469,7 +469,7 @@ section:nth-child(4) {
             }
         }
     }
-    section:nth-child(2) {
+    .main-page-section-two {
         font-family: "Righteous", cursive;
         .headline {
             width: 100vw;
@@ -555,7 +555,7 @@ section:nth-child(4) {
             }
         }
     }
-    section:nth-child(3) {
+    .main-page-section-three {
         font-family: "Righteous", cursive;
         height: 150vh;
         .headline {
