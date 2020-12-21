@@ -9,13 +9,18 @@
 
 <url>
   <loc>https://rishabh.live/</loc>
-  <lastmod>2020-11-17T05:16:08+00:00</lastmod>
+  <lastmod>2020-12-21T13:23:11+00:00</lastmod>
   <priority>1.00</priority>
 </url>
 <url>
-  <loc>https://rishabh.live/home</loc>
-  <lastmod>2020-11-17T05:16:08+00:00</lastmod>
+  <loc>https://rishabh.live/blogs</loc>
+  <lastmod>2020-12-21T13:23:11+00:00</lastmod>
   <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://rishabh.live/blogs/an-awesone-article</loc>
+  <lastmod>2020-12-21T13:23:11+00:00</lastmod>
+  <priority>0.64</priority>
 </url>
 
 
