@@ -1,0 +1,18 @@
+.footer {
+    min-height: 50px;
+    max-height: 50px;
+    background-color: rgb(255, 255, 255);
+    width: 100vw;
+    font-size: large;
+    color: rgb(85, 85, 85);
+    position: relative;
+    bottom: 0;
+    a {
+        text-decoration: none;
+        color: rgb(85, 85, 85);
+    }
+    a:hover {
+        text-decoration: none;
+        color: rgb(85, 85, 85);
+    }
+}
