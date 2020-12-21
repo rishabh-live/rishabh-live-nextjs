@@ -1,3 +1,5 @@
+$base-bgc:rgba(5, 143, 255, 0.938);
+$front-line-text: rgb(253, 238, 190);
 body,
 html {
     margin: 0;
@@ -23,11 +25,11 @@ section {
     max-height: 100vh;
     background: none;
     font-family: "Righteous", cursive;
-    background-color: #3a5dd7;
+    background-color: $base-bgc;
     .line {
         label {
             margin: 1vh;
-            color: rgb(109, 177, 241);
+            color: $front-line-text;
             font-size: 9vw;
             animation: line 0.3s ease-in;
         }
@@ -235,7 +237,7 @@ section {
         .line {
             label {
                 margin: 2vw;
-                color: rgb(109, 177, 241);
+                color: $front-line-text;
                 font-size: 9vw;
                 animation: line 0.3s ease-in;
             }
@@ -439,11 +441,11 @@ section {
     .main-page-section-one {
         background: none;
         font-family: "Righteous", cursive;
-        background-color: #3a5dd7;
+        background-color: $base-bgc;
         .line {
             label {
                 margin: 2vh;
-                color: rgb(109, 177, 241);
+                color: $front-line-text;
                 font-size: 9vw;
                 animation: line 0.3s ease-in;
             }

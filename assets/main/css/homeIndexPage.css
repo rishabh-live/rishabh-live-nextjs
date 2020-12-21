@@ -23,12 +23,12 @@ section {
   max-height: 100vh;
   background: none;
   font-family: "Righteous", cursive;
-  background-color: #3a5dd7;
+  background-color: rgba(5, 143, 255, 0.938);
 }
 
 .main-page-section-one .line label {
   margin: 1vh;
-  color: #6db1f1;
+  color: #fdeebe;
   font-size: 9vw;
   -webkit-animation: line 0.3s ease-in;
           animation: line 0.3s ease-in;
@@ -296,7 +296,7 @@ section {
 @media (max-width: 500px) {
   .main-page-section-one .line label {
     margin: 2vw;
-    color: #6db1f1;
+    color: #fdeebe;
     font-size: 9vw;
     -webkit-animation: line 0.3s ease-in;
             animation: line 0.3s ease-in;
@@ -537,11 +537,11 @@ section {
   .main-page-section-one {
     background: none;
     font-family: "Righteous", cursive;
-    background-color: #3a5dd7;
+    background-color: rgba(5, 143, 255, 0.938);
   }
   .main-page-section-one .line label {
     margin: 2vh;
-    color: #6db1f1;
+    color: #fdeebe;
     font-size: 9vw;
     -webkit-animation: line 0.3s ease-in;
             animation: line 0.3s ease-in;
