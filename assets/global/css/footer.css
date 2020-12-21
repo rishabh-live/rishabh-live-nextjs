@@ -1,7 +1,7 @@
 .footer {
   min-height: 50px;
   max-height: 50px;
-  background-color: white;
+  background: none;
   width: 100vw;
   font-size: large;
   color: #555555;
