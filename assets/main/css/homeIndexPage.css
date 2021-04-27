@@ -21,9 +21,8 @@ section {
 
 .main-page-section-one {
   max-height: 100vh;
-  background: none;
   font-family: "Righteous", cursive;
-  background-color: rgba(5, 143, 255, 0.938);
+  background: linear-gradient(45deg, #1e354b 0%, #1a4474 76%, #004391 100%);
 }
 
 .main-page-section-one .line label {
@@ -117,6 +116,11 @@ section {
   font-size: 7vh;
   -webkit-transform: translate(4vw, 12vh);
           transform: translate(4vw, 12vh);
+}
+
+.main-page-section-two .shadow {
+  -webkit-box-shadow: 0px 0px 30px 100px #bdbaba;
+          box-shadow: 0px 0px 30px 100px #bdbaba;
 }
 
 .main-page-section-two .aboutCardHolder {
