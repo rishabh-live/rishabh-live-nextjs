@@ -1,21 +1,23 @@
-.footer {
+.secFooter {
   min-height: 50px;
-  max-height: 50px;
-  background: none;
+  background: linear-gradient(45deg, #92b9e4 10%, #7fa3e6 46%, #5391ee 100%);
   width: 100vw;
   font-size: large;
-  color: #555555;
+  color: white;
   position: relative;
   bottom: 0;
+  font-weight: bold;
 }
 
-.footer a {
+.secFooter a {
   text-decoration: none;
-  color: #555555;
+  color: white;
+  font-weight: bold;
 }
 
-.footer a:hover {
+.secFooter a:hover {
   text-decoration: none;
-  color: #555555;
+  color: white;
+  font-weight: bolder;
 }
 /*# sourceMappingURL=footer.css.map */

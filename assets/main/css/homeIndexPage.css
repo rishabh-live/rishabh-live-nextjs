@@ -20,9 +20,13 @@ section {
 }
 
 .main-page-section-one {
-  max-height: 100vh;
+  height: 100vh;
+  width: 100vw;
   font-family: "Righteous", cursive;
-  background: linear-gradient(45deg, #1e354b 0%, #1a4474 76%, #004391 100%);
+  background: linear-gradient(45deg, #92b9e4 10%, #7fa3e6 46%, #5391ee 100%);
+  background-size: 200% 200%;
+  -webkit-animation: main-page-section-one 5s ease infinite;
+          animation: main-page-section-one 5s ease infinite;
 }
 
 .main-page-section-one .line label {
@@ -44,7 +48,7 @@ section {
 }
 
 .main-page-section-one .holder .dp img {
-  height: calc(100px + 25vw);
+  height: calc(100px + 23vw);
   -webkit-transform: translateX(-10vw);
           transform: translateX(-10vw);
   -webkit-animation: loadimg 1s linear;
@@ -53,9 +57,18 @@ section {
       -ms-flex: 1;
           flex: 1;
   border-radius: 50%;
+  -webkit-transition: height 0.3s ease-in-out;
+  transition: height 0.3s ease-in-out;
+}
+
+.main-page-section-one .holder .dp img:hover {
+  height: calc(100px + 25vw);
+  -webkit-transition: height 0.2s ease-in-out;
+  transition: height 0.2s ease-in-out;
 }
 
 .main-page-section-one .holder .menu {
+  max-height: 44vh;
   margin-top: 5vh;
   -webkit-transform: translate(-10vw, 3vh);
           transform: translate(-10vw, 3vh);
@@ -74,13 +87,24 @@ section {
   padding-top: 2vh;
   -webkit-transform: translateY(10px);
           transform: translateY(10px);
-  font-size: 6vh;
   color: white;
 }
 
 .main-page-section-one .holder .menu p a {
   text-decoration: none;
   color: white;
+  font-size: 6vh;
+  -webkit-transition: font-size 0.3s ease-in-out;
+  transition: font-size 0.3s ease-in-out;
+}
+
+.main-page-section-one .holder .menu p a:hover {
+  text-decoration: none;
+  color: #f5d099;
+  z-index: 20;
+  font-size: 9vh;
+  -webkit-transition: font-size 0.2s ease-in-out;
+  transition: font-size 0.2s ease-in-out;
 }
 
 .main-page-section-two {
@@ -939,6 +963,30 @@ section {
     opacity: 1;
     -webkit-transform: translate(0vw, 3vh);
             transform: translate(0vw, 3vh);
+  }
+}
+
+@-webkit-keyframes main-page-section-one {
+  0% {
+    background-position: 10% 0%;
+  }
+  50% {
+    background-position: 91% 100%;
+  }
+  100% {
+    background-position: 10% 0%;
+  }
+}
+
+@keyframes main-page-section-one {
+  0% {
+    background-position: 10% 0%;
+  }
+  50% {
+    background-position: 91% 100%;
+  }
+  100% {
+    background-position: 10% 0%;
   }
 }
 

@@ -1,18 +1,21 @@
-.footer {
+.secFooter {
     min-height: 50px;
-    max-height: 50px;
-    background: none;
+    // max-height: 50px;
+    background:linear-gradient(45deg, rgb(146, 185, 228) 10%, rgb(127, 163, 230) 46%, rgb(83, 145, 238) 100%);
     width: 100vw;
     font-size: large;
-    color: rgb(85, 85, 85);
+    color: rgb(255, 255, 255);
     position: relative;
     bottom: 0;
+    font-weight: bold;
     a {
         text-decoration: none;
-        color: rgb(85, 85, 85);
+        color: rgb(255, 255, 255);
+        font-weight: bold;
     }
     a:hover {
         text-decoration: none;
-        color: rgb(85, 85, 85);
+        color: rgb(255, 255, 255);
+        font-weight: bolder;
     }
 }
