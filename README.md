@@ -1,5 +1,15 @@
 # rishabh-live-nextjs
 
+## Summary
+
+![GitHub last commit](https://img.shields.io/github/last-commit/rishabh-live/rishabh-live-nextjs)&nbsp;
+![GitHub issues](https://img.shields.io/github/issues/rishabh-live/rishabh-live-nextjs)&nbsp;
+![GitHub repo size](https://img.shields.io/github/repo-size/rishabh-live/rishabh-live-nextjs)&nbsp;
+![GitHub](https://img.shields.io/github/license/rishabh-live/rishabh-live-nextjs)&nbsp;
+![Lines of code](https://img.shields.io/tokei/lines/github/rishabh-live/rishabh-live-nextjs)&nbsp;
+![Website](https://img.shields.io/website?down_color=red&down_message=Under%20Maintainence&up_color=green&up_message=UP&url=https%3A%2F%2Frishabh.live)
+
+
 ### Rishabh's Portfolio website :  <a href="https://rishabh.live/?ref=github&loc=repository" target="_blank"> Visit My Portfolio</a>
 <br>
 
