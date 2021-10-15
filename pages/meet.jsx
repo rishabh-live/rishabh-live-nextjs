@@ -7,4 +7,6 @@ export default function Meet() {
   useEffect(() => {
     router.push("https://meet.google.com/cio-havg-hse");
   });
+
+  return <p>Redirecting...</p>
 }
